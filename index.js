@@ -48,9 +48,9 @@ function interestingFacts(){
 
   voce.lang = "en-US";
 
-  voce.volume = 1;
+  voce.volume = 1.5;
 
-  voce.rate = 1;
+  voce.rate = 2;
 
   voce.pitch = 1; // Can be 0, 1, or 2
 
