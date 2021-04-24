@@ -32,12 +32,17 @@ const IFS =[
 ["the largest country in world russia is 34150800 times larger than wolds smallest country"],
 ["we are travelling at a speed of approximately 1073059.3607305km/h due to earths revolution"]
 ];
+
+var fact=document.querySelector("p");
+
 function interestingFacts(){
     const synth = window.speechSynthesis;
     var ifIndex= Math.floor((Math.random() * 31) + 0);
     console.log(IFS[ifIndex]);
+    fact.innerText=IFS[ifIndex]; 
+    
     let voce = new SpeechSynthesisUtterance(IFS[ifIndex]);
-
+    
   var voices = window.speechSynthesis.getVoices();
     voce.text = IFS[ifIndex];
 
